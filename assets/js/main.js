@@ -3,7 +3,27 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+//Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
 
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyCNn_x37yp48KTW1hQkDGpdcgJSisl2y88",
+  authDomain: "samsportfolio-e2ac7.firebaseapp.com",
+  projectId: "samsportfolio-e2ac7",
+  storageBucket: "samsportfolio-e2ac7.appspot.com",
+  messagingSenderId: "425509070515",
+  appId: "1:425509070515:web:973a2ab4ec2c186ec532c6",
+  measurementId: "G-SYG681DKHC"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
 (function($) {
 
 	var	$window = $(window),
